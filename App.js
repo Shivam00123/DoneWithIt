@@ -1,20 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import Screen from "./app/components/Screen";
+import AddListing from "./app/components/Listings/AddListing";
 
 export default function App() {
+  // return <WelcomeScreen />;
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Screen>
+      {/* <AppTextInput />
+      <Switch value={value} onValueChange={(newValue) => setValue(newValue)} /> */}
+      <AddListing />
+    </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

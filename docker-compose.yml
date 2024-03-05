@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  native:
+    build:
+      dockerfile: Dockerfile.dev
+      context: .
+    volumes:
+      - /app/node_modules
+      - .:/app
+    ports:
+      - 8081:8081
